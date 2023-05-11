@@ -11,25 +11,14 @@ See [chacha20poly1305_test.go](chacha20poly1305_test.go), [x25519xchacha20poly13
 ## Test
 
 ```shell
-# Test everything:
+# Run tests
 make test
 
-# For BDD development:
-# It will open a new browser window. Make sure:
-#   1. There is no errors on the terminal window.
-#   2. There is no other open GoConvey page.
+# Continuous testing
 make test-ui
 
 # Benchmarks
 make test-benchmarks
-```
-
-## Release
-
-```shell
-# Update and commit CHANGELOG.md first (i.e. git add CHANGELOG.md && git commit -m "v1.0.0").
-# Set GIT_TAG using semver (i.e. GIT_TAG=v1.0.0)
-make release GIT_TAG=
 ```
 
 ## Contributing
